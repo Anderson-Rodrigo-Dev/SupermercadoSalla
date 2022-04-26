@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/fonts.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/bee195cb70.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Salla Supermercados</title>
+  </head>
+  <body>
+    <header class="cabecalho">
+      <a href="#" class="logo">
+        <img src="./src/image/logo.png" alt="logo Salla" class="imagem" />
+      </a>
+
+      <nav class="navegacao">
+        <ul class="menu">
+          <li class="item">
+            <a href="#ofertas">Ofertas</a>
+          </li>
+          <li class="item">
+            <a href="#nossas-lojas">Nossas Lojas</a>
+          </li>
+          <li class="item">
+            <a href="#trabalhe-conosco">Trabalhe Conosco</a>
+          </li>
+          <li class="item">
+            <a href="#fale-conosco">Fale Conosco</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="encarte">
+        <div class="cadastro">
+          <h2>Receba nossas ofertas</h2>
+          <p>
+            Confira nossas ofertas da semana, cadastre-se no nosso whatsapp e
+            baixe o app para não ficar de fora.
+          </p>
+
+          <div class="botoes">
+            <a href="https://www.google.com/" target="_blank" class="btn"
+              >cadastre-se</a
+            >
+            <a href="https://www.google.com/" target="_blank" class="btn"
+              >baixe o app</a
+            >
+          </div>
+        </div>
+
+        <div class="encarte-do-dia">
+          <img src="./src/image/Salla.jpg" alt="encarte do dia" />
+          <h3 class="texto-destacado">Encarte</h3>
+          <h3>toda a semana com ofertas em todos os setores</h3>
+        </div>
+      </section>
+
+      <section class="ofertas" id="ofertas">
+        <i class="fa-solid fa-angle-left"></i>
+        <img
+          src="https://via.placeholder.com/220x360"
+          alt="imagem marcacao"
+          class="oferta-imagem mostrar"
+        />
+        <img
+          src="https://via.placeholder.com/230x340"
+          alt="imagem marcacao"
+          class="oferta-imagem mostrar"
+        />
+        <img
+          src="https://via.placeholder.com/230x340"
+          alt="imagem marcacao"
+          class="oferta-imagem mostrar"
+        />
+        <img
+          src="https://via.placeholder.com/230x340"
+          alt="imagem marcacao"
+          class="oferta-imagem mostrar"
+        />
+        <img
+          src="https://via.placeholder.com/230x340"
+          alt="imagem marcacao"
+          class="oferta-imagem mostrar"
+        />
+        <i class="fa-solid fa-angle-right"></i>
+      </section>
+
+      <section class="nossas-lojas" id="nossas-lojas">
+        <h2>Nossas Lojas</h2>
+
+        <div class="lojas">
+          <div class="loja">
+            <img src="./src/image/matriz.png" alt="salla matriz" />
+
+            <div>
+              <h3>Matriz</h3>
+              <p class="endereco">Av. Juriti, 321 - Jd. Claudia Pinhais - PR, 83326-500</p>
+              <p>(41) 3668-1130</p>
+            </div>
+          </div>
+
+          <div class="loja">
+            <img src="./src/image/mini-salla.png" alt="salla mini" />
+
+            <div>
+              <h3>Mini Salla</h3>
+              <p class="endereco">R. Silvino Salla, 59 - Atuba, Pinhais - PR, 83326-713</p>
+              <p>(41) 3601-1227</p>
+            </div>
+          </div>
+
+          <div class="loja">
+            <img src="./src/image/boni.png" alt="salla boni" />
+
+            <div>
+              <h3>Alto Tarumã</h3>
+              <p class="endereco">Av. Jacarezinho, 1989 Jd. Fenix - Pinhais - PR, 83325-460</p>
+              <p>(41) 3653-6118</p>
+            </div>
+          </div>
+          <div class="loja">
+            <img src="./src/image/matriz.png" alt="salla matriz" />
+
+            <div>
+              <h3>Piraquara</h3>
+              <p class="endereco">R. Itati 609 - Araçatuba Piraquara - PR 83301-400</p>
+              <p>(41) 3676-0306</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="trabalhe-conosco" id="trabalhe-conosco">
+        <h2>Trabalhe Conosco</h2>
+
+        <form class="form" action="" method="get">
+          <p>Seu nome</p>
+          <input class="form-info" type="text" name="nome" id="nome" />
+          <p>Seu email</p>
+          <input class="form-info" type="email" name="email" id="email" />
+          <p>Telefone para contato</p>
+          <input class="form-info" type="number" name="telefone" id="telefone" />
+          <p>
+            Selecione qual Supermercado Salla você deseja enviar seu curriculo
+          </p>
+          <select class="form-info" name="filiais">
+            <option value="">Selecione uma filial</option>
+            <option value="Matriz">Matriz</option>
+            <option value="Mini-Salla">Mini Salla</option>
+            <option value="Alto-Taruma">Alto Tarumã</option>
+            <option value="Piraquara">Piraquara</option>
+          </select>
+          <p>Seu curriculo(formatos permitidos: PDF, DOC, DOCX)</p>
+          <input class="form-info" type="file" name="curriculo" id="curriculo" accept=".pdf, .doc, .docx"/>
+          <button class="btn" type="submit">enviar</button>
+        </form>
+      </section>
+
+      <section class="contato" id="fale-conosco">
+        <div class="rodape">
+          <a href="#"><img src="./src/image/logo.png" alt="Logo Salla" />
+          </a>
+          <div class="redes-sociais">
+            <a href="https://www.facebook.com/SallaSupermercados" target="_blank" class="rede-social">
+              <i class="fa-brands fa-facebook-square"></i>
+              <p>facebook</p>
+            </a>
+            <a href="https://www.instagram.com/sallasupermercados/" target="_blank" class="rede-social">
+              <i class="fa-brands fa-instagram-square"></i>
+              <p>instagram</p>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=554136681130&text=quero%20receber%20as%20ofertas." target="_blank" class="rede-social">
+              <i class="fa-brands fa-whatsapp-square"></i>
+              <p>whatsapp</p>
+            </a>
+          </div>
+        </div>
+        <p class="copyright">
+          © Salla Supermercados 2022 - Preços e Estoque sujeitos a alteração
+          sem aviso prévio. Criado por Anderson Rodrigo
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
